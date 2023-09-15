@@ -1,0 +1,30 @@
+public class Calculator {
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to add two doubles
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    // Method to add three integers
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        // Call the different overloaded methods
+        int sum1 = calculator.add(5, 3);
+        double sum2 = calculator.add(2.5, 3.7);
+        int sum3 = calculator.add(1, 2, 3);
+
+        System.out.println("Sum of integers: " + sum1);
+        System.out.println("Sum of doubles: " + sum2);
+        System.out.println("Sum of three integers: " + sum3);
+    }
+}
+//Method overloading allows you to define multiple methods with the same name but different parameter lists within the same class
